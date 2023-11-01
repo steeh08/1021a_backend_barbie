@@ -1,5 +1,5 @@
 import   FilmeRepositorioInterface from "../../aplicacao/fime-repositorio-interface"
-export default class BancoEmMemoria implements FilmeRepositorioInterface{
+export default class BancoMongoDB implements FilmeRepositorioInterface{
     public dados:Filme[] = []
     constructor(){}
     public salvar(input):Promise<boolean>{
